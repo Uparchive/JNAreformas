@@ -1,223 +1,454 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JNA Reformas e Soluções</title>
-  <meta name="description" content="Serviços de reformas, manutenção de telhados e desentupimentos com qualidade e confiança.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JNA Reformas & Soluções - Serviços completos de reforma e construção em São Paulo com qualidade, segurança e pontualidade.">
+  <meta name="keywords" content="reformas, construção, São Paulo, reforma de telhados, instalações hidráulicas, reformas residenciais, reformas comerciais">
+  <meta name="author" content="JNA Reformas & Soluções">
   <meta name="robots" content="index, follow">
+  <title>JNA Reformas & Soluções</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="JNA Reformas e Soluções">
-  <meta property="og:description" content="Serviços de reformas, manutenção de telhados e desentupimentos com qualidade e confiança.">
-  <meta property="og:image" content="images/logo.png">
-  <meta property="og:url" content="https://seusite.com">
-  <meta property="og:type" content="website">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" />
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css" />
-
-  <!-- JavaScript -->
-  <script src="js/script.js" defer></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <!-- Acessibilidade: link para pular conteúdo -->
-  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
-
-  <!-- Cabeçalho -->
+  <!-- ========================= HEADER ========================= -->
   <header>
-    <div class="container header-container">
-      <a href="#hero" class="logo-link">
-        <img src="images/logo.png" alt="JNA Reformas e Soluções" class="logo" />
+    <div class="container">
+      <!-- LOGO -->
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="JNA Reformas & Soluções" class="logo-img">
       </a>
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#video">Vídeo</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>      
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-    </div>
-  </header>
-
-  <!-- Conteúdo Principal -->
-  <main id="main-content">
-    <!-- Seção Hero -->
-    <section id="hero" class="hero">
-      <div class="container hero-content">
-        <h1>Soluções em Reformas e Manutenção</h1>
-        <p>Qualidade e confiança em cada serviço realizado.</p>
-        <a
-          href="https://wa.me/5511982602902"
-          class="btn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Fale Conosco</a>
-      </div>
-      <!-- Indicador de Scroll -->
-      <div class="scroll-indicator">
-        <span class="arrow">&#x2193;</span>
-        <span class="scroll-text">Rolar para baixo</span>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divisor"></div>
-
-    <!-- Seção Sobre -->
-    <section id="sobre" class="sobre fade-in">
-      <div class="container">
-        <h2 id="texto-sobre" class="digitando"></h2>
-        <p id="descricao-sobre"></p>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divisor"></div>
-
-    <!-- Seção Serviços (Slider) -->
-    <section id="servicos" class="servicos">
-      <div class="container">
-        <h2>Nossos Serviços</h2>
-        <div class="slider-container">
-          <button class="prev-slide" aria-label="Slide anterior">&#10094;</button>
-          <div class="slider" role="region" aria-label="Galeria de serviços">
-            <!-- Slide 1 -->
-            <div class="slide active">
-              <img src="images/telhados.png" alt="Manutenção e troca de telhados" />
-              <div class="overlay">
-                <h3>🔨 Manutenção e troca de telhados</h3>
-                <p>Garantimos segurança e durabilidade para o seu telhado.</p>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="slide">
-              <img src="images/desentupimentos.png" alt="Desentupimentos" />
-              <div class="overlay">
-                <h3>🚰 Desentupimentos</h3>
-                <p>Resolvemos problemas de encanamento de forma rápida e eficaz.</p>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="slide">
-              <img src="images/reformasgerais.png" alt="Reformas em geral" />
-              <div class="overlay">
-                <h3>🏠 Reformas em geral</h3>
-                <p>Transformamos sua casa ou empresa com reformas personalizadas.</p>
-              </div>
-            </div>
-          </div>
-          <button class="next-slide" aria-label="Próximo slide">&#10095;</button>
-          <div class="slider-indicators" aria-label="Indicadores do slider"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divisor"></div>
-
-    <!-- Seção Vídeo -->
-    <section id="video" class="video-section">
-      <div class="container">
-        <h2>Conheça Nosso Trabalho</h2>
-        <p>Assista ao vídeo e saiba mais sobre nossos serviços e diferenciais.</p>
-        <div class="video-wrapper">
-          <!-- Referência de vídeo: substitua "URL_DO_VIDEO" pela URL desejada -->
-          <iframe src="https://uparchive.github.io/uploadgalaxy/embed.html?videoUrl=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Farmazene-acd30.appspot.com%2Fo%2Fuploads%252Fz0wQUWxFhKRBeMLIHIjOHd1dpHn2%252FJNA%2520Apresenta%25C3%25A7%25C3%25A3o%2520Final.mp4%3Falt%3Dmedia%26token%3Db0718222-242e-4f6d-8e84-43ad08e89b55" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- Divisor -->
-    <div class="divisor"></div>
-
-<!-- Seção Blog Preview -->
-<section id="blog-preview" class="blog-preview">
-  <div class="container">
-    <h2>Últimas do Blog</h2>
-    <div class="blog-posts">
       
-      <article class="blog-post">
-        <img src="images/blog1.jpg" alt="Imagem do Post 1" class="blog-post-thumb" />
-        <h3><a href="post.html">Título do Post 1</a></h3>
-        <p>Resumo do post 1... Conte um pouco sobre o conteúdo do post, gerando interesse no leitor.</p>
-        <a href="post.html" class="btn">Leia Mais</a>
-      </article>
-
-      <article class="blog-post">
-        <img src="images/blog2.jpg" alt="Imagem do Post 2" class="blog-post-thumb" />
-        <h3><a href="post.html">Título do Post 2</a></h3>
-        <p>Resumo do post 2... Fale brevemente sobre o assunto principal do texto.</p>
-        <a href="post.html" class="btn">Leia Mais</a>
-      </article>
-
-      <!-- Você pode adicionar mais "article" conforme a quantidade de posts -->
-    
+      <!-- Container que agrupa contato + menu -->
+      <div class="header-info">
+        <!-- Contato (desktop) -->
+        <div class="header-contact">
+          <a href="mailto:contatojnareformas@gmail.com" class="header-email">
+            <i class="contact-icon email-icon"></i> contatojnareformas@gmail.com
+          </a>
+          <a href="tel:+5511982602902" class="header-phone">
+            <i class="contact-icon phone-icon"></i> (11) 98260-2902
+          </a>
+        </div>
+        
+        <!-- Menu principal -->
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link active">Home</a></li>
+            <li><a href="#video-presentation" class="nav-link">Apresentação</a></li>
+            <li><a href="#services" class="nav-link">Serviços</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- Botão Hamburguer (mobile) -->
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <!-- Link opcional para página com todos os posts -->
-    <div class="blog-view-more">
-      <a href="blog.html" class="btn">Ver todos os posts</a>
+  </header>    
+
+  <!-- ========================= HERO ========================= -->
+  <section class="hero">
+    <div class="container">
+      <h1>Transformando Casas, Realizando Sonhos</h1>
+      <p>Serviços completos de reforma e construção com qualidade, segurança e pontualidade. Da ideia ao projeto finalizado, conte com a JNA para transformar seu espaço.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+        <a href="#services" class="btn btn-secondary">Nossos Serviços</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- ========================= STATS ========================= -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Anos de Experiência</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Projetos Realizados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Clientes Satisfeitos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Comprometimento</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Divisor -->
-    <div class="divisor"></div>
+  <!-- ========================= VÍDEO APRESENTAÇÃO ========================= -->
+  <section class="video-presentation" id="video-presentation">
+    <div class="container">
+      <h2 class="section-title">Apresentação em Vídeo</h2>
+      <p class="section-subtitle">Conheça mais sobre a JNA Reformas & Soluções</p>
+      <div class="video-wrapper">
+        <iframe src="https://uparchive.github.io/uploadgalaxy/embed.html?videoUrl=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Farmazene-acd30.appspot.com%2Fo%2Fuploads%252Fz0wQUWxFhKRBeMLIHIjOHd1dpHn2%252FJNA%2520Apresenta%25C3%25A7%25C3%25A3o%2520Final.mp4%3Falt%3Dmedia%26token%3Db0718222-242e-4f6d-8e84-43ad08e89b55" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="contato">
-      <div class="container">
-        <div class="contact-card">
-          <h2>Entre em Contato</h2>
-          <p>Estamos prontos para atender suas necessidades. Preencha o formulário abaixo e entraremos em contato.</p>
-          <form id="contact-form" action="contato.php" method="POST">
-            <div class="form-group">
-              <label for="nome">Nome:</label>
-              <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="assunto">Assunto:</label>
-              <input type="text" id="assunto" name="assunto" required>
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem:</label>
-              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Enviar Mensagem</button>
-          </form>
-          <div class="contato-info">
-            <p><strong>Email:</strong> <a href="mailto:kesllyalbuquerque@gmail.com">contatojnareformas@gmail.com</a></p>
-            <p><strong>Telefone:</strong> <a href="tel:+5511982602902">(11) 98260-2902</a></p>
+  <!-- ========================= SERVIÇOS ========================= -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <p class="section-subtitle">Soluções completas para sua casa ou empresa</p>
+      <div class="services-grid">
+        <!-- Exemplo de Service Card -->
+        <div class="service-card">
+          <div class="service-image">
+            <img src="img/reformasgerais.png" alt="Reformas Internas" loading="lazy">
+          </div>
+          <div class="service-content">
+            <h3>Reformas Internas</h3>
+            <p>Transformamos ambientes internos com acabamentos de qualidade.</p>
+            <ul class="service-list">
+              <li>Pintura e texturização</li>
+              <li>Troca de pisos</li>
+              <li>Instalação de forro</li>
+              <li>Reforma de banheiros</li>
+            </ul>
+            <a href="#contact" class="btn-service">Solicitar Orçamento</a>
+          </div>
+        </div>
+        <!-- Outros Service Cards... -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CTA ========================= -->
+  <section class="cta">
+    <div class="container">
+      <h2>Transforme seu Espaço com Profissionais Qualificados</h2>
+      <p>Nossa equipe está pronta para tornar seu projeto realidade. Entre em contato hoje mesmo!</p>
+      <a href="#contact" class="btn btn-large">Fale com um Especialista</a>
+    </div>
+  </section>
+
+  <!-- ========================= PROJETOS ========================= -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projetos Realizados</h2>
+      <p class="section-subtitle">Conheça alguns de nossos trabalhos</p>
+      <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="residenciais">Residenciais</button>
+        <button class="filter-btn" data-filter="comerciais">Comerciais</button>
+        <button class="filter-btn" data-filter="banheiros">Banheiros</button>
+        <button class="filter-btn" data-filter="cozinhas">Cozinhas</button>
+      </div>
+      <div class="project-grid">
+        <!-- Exemplo de Project Card -->
+        <div class="project-card" data-category="residenciais">
+          <img src="img/imagem1.png" alt="Reforma Residencial" class="project-img" loading="lazy">
+          <div class="project-overlay">
+            <h3>Reforma Residencial</h3>
+            <p>Renovação completa de ambientes internos</p>
+            <a href="#" class="btn-project">Ver Detalhes</a>
+          </div>
+        </div>
+        <!-- Outros Project Cards... -->
+      </div>
+      <div class="projects-more">
+        <a href="#contact" class="btn">Solicite seu Projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= DEPOIMENTOS ========================= -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+      <p class="section-subtitle">A satisfação de nossos clientes é nossa prioridade</p>
+      <div class="testimonials-wrapper">
+        <div class="testimonial-slider">
+          <div class="testimonial-card active">
+            <p class="testimonial-text">"A JNA fez um excelente trabalho na minha casa! Profissionalismo e qualidade."</p>
+            <span class="testimonial-author">Mariana Silva - São Paulo, SP</span>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Serviço rápido e eficiente. Recomendo a JNA para qualquer reforma."</p>
+            <span class="testimonial-author">Carlos Mendes - Rio de Janeiro, RJ</span>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Ótimo atendimento e resultado impecável. Superou minhas expectativas!"</p>
+            <span class="testimonial-author">Ana Souza - Belo Horizonte, MG</span>
+          </div>
+        </div>
+        <div class="testimonial-controls">
+          <button class="testimonial-prev">&#9665;</button>
+          <div class="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="testimonial-next">&#9655;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FAQ ========================= -->
+  <section class="faq">
+    <div class="container">
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <p class="section-subtitle">Tire suas dúvidas sobre nossos serviços</p>
+      
+      <div class="faq-grid">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Quanto tempo leva uma reforma completa?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>O tempo de uma reforma completa varia conforme o tamanho e complexidade do projeto. Em geral, fornecemos um cronograma detalhado após a avaliação inicial.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Vocês fornecem o material ou apenas a mão de obra?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Podemos fornecer todos os materiais necessários, garantindo qualidade e preços competitivos, ou trabalhar apenas com mão de obra, utilizando materiais adquiridos pelo cliente.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Vocês realizam reformas comerciais também?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim, atendemos tanto residências quanto estabelecimentos comerciais, adequando nossos serviços às necessidades de cada cliente.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Em quais regiões vocês atendem?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Atendemos em toda a Grande São Paulo e cidades próximas. Para projetos em outras regiões, entre em contato para verificarmos a disponibilidade.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 5 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como funciona o orçamento?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Após o primeiro contato, agendamos uma visita técnica para avaliar o local e entender suas necessidades. Em seguida, enviamos um orçamento detalhado, sem compromisso.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 6 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Quais são as formas de pagamento disponíveis?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Trabalhamos com diversas formas de pagamento, incluindo transferência bancária, boleto e cartões de crédito. Podemos analisar condições especiais conforme o projeto.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 7 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Como posso acompanhar o andamento da obra?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Disponibilizamos um acompanhamento periódico, com relatórios e fotos do andamento. Além disso, nossa equipe permanece à disposição para esclarecer dúvidas a qualquer momento.</p>
+          </div>
+        </div>
+  
+        <!-- FAQ 8 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Qual é a garantia dos serviços prestados?</h3>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Oferecemos garantia de mão de obra e materiais conforme cada projeto. Detalhamos o período e condições da garantia no contrato ou orçamento final.</p>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>  
 
-  <!-- Rodapé -->
+  <!-- ========================= CONTATO ========================= -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="section-subtitle">Estamos prontos para transformar seu espaço</p>
+      <div class="contact-grid">
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Seu nome completo" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Seu e-mail" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" placeholder="Seu telefone com DDD" required>
+              <span class="form-error" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+              <label for="service">Serviço Desejado</label>
+              <select id="service" required>
+                <option value="">Selecione o serviço</option>
+                <option value="reform">Reforma Completa</option>
+                <option value="kitchen">Cozinha</option>
+                <option value="bathroom">Banheiro</option>
+                <option value="roof">Telhado</option>
+                <option value="plumbing">Encanamento</option>
+                <option value="other">Outro</option>
+              </select>
+              <span class="form-error" id="serviceError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" placeholder="Descreva seu projeto ou necessidade" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <div class="form-message" id="formMessage"></div>
+            <button type="submit" class="btn btn-form">Enviar Mensagem</button>
+          </form>
+        </div>
+        <div class="contact-info-container">
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+            <div class="contact-item">
+              <i class="contact-icon email-icon"></i>
+              <div>
+                <p class="contact-label">E-mail</p>
+                <a href="mailto:contatojnareformas@gmail.com" class="contact-detail">contatojnareformas@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="contact-icon phone-icon"></i>
+              <div>
+                <p class="contact-label">Telefone/WhatsApp</p>
+                <a href="tel:+5511982602902" class="contact-detail">(11) 98260-2902</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="contact-icon location-icon"></i>
+              <div>
+                <p class="contact-label">Localização</p>
+                <p class="contact-detail">São Paulo - SP</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="contact-icon time-icon"></i>
+              <div>
+                <p class="contact-label">Horário de Atendimento</p>
+                <p class="contact-detail">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <a href="#" class="social-icon" title="Facebook"><i class="facebook-icon"></i></a>
+              <a href="#" class="social-icon" title="Instagram"><i class="instagram-icon"></i></a>
+              <a href="https://wa.me/5511982602902" class="social-icon" title="WhatsApp" target="_blank" rel="noopener"><i class="whatsapp-icon-small"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= FOOTER ========================= -->
   <footer>
     <div class="container">
-      <p>&copy; 2024 JNA Reformas e Soluções - Todos os direitos reservados.</p>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>JNA Reformas & Soluções</h3>
+          <p>Transformando sonhos em projetos reais com qualidade e compromisso há mais de 15 anos.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="facebook-icon"></i></a>
+            <a href="#" class="social-icon"><i class="instagram-icon"></i></a>
+            <a href="https://wa.me/5511982602902" class="social-icon" target="_blank" rel="noopener"><i class="whatsapp-icon-small"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p><i class="contact-icon email-icon"></i> contatojnareformas@gmail.com</p>
+          <p><i class="contact-icon phone-icon"></i> (11) 98260-2902</p>
+          <p><i class="contact-icon location-icon"></i> São Paulo - SP</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <a href="#">Home</a>
+          <a href="#video-presentation">Apresentação</a>
+          <a href="#services">Serviços</a>
+          <a href="#projects">Projetos</a>
+          <a href="#testimonials">Depoimentos</a>
+          <a href="#contact">Contato</a>
+        </div>
+        <div class="footer-section">
+          <h3>Serviços</h3>
+          <a href="#services">Reformas Internas</a>
+          <a href="#services">Telhados e Coberturas</a>
+          <a href="#services">Instalações Hidráulicas</a>
+          <a href="#services">Projetos e Planejamento</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 JNA Reformas & Soluções. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span class="heart">❤</span> por JNA Tech</p>
+      </div>
     </div>
   </footer>
+
+  <!-- ========================= BOTÃO WHATSAPP ========================= -->
+  <a href="https://wa.me/5511982602902" class="whatsapp-btn" target="_blank" rel="noopener">
+    <img src="img/whatsapplogo.png" alt="WhatsApp" class="whatsapp-icon">
+  </a>
+
+  <!-- ========================= BOTÃO VOLTAR AO TOPO ========================= -->
+  <button id="backToTop" class="back-to-top">
+    <i class="arrow-up-icon"></i>
+  </button>
+
+  <!-- ========================= SCRIPTS ========================= -->
+  <script src="js/script.js"></script>
 </body>
 </html>
