@@ -228,35 +228,105 @@
     </div>
   </section>
 
-  <!-- ========================= PROJETOS ========================= -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projetos Realizados</h2>
-      <p class="section-subtitle">Conheça alguns de nossos trabalhos</p>
-      <div class="project-filter">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="residenciais">Residenciais</button>
-        <button class="filter-btn" data-filter="comerciais">Comerciais</button>
-        <button class="filter-btn" data-filter="banheiros">Banheiros</button>
-        <button class="filter-btn" data-filter="cozinhas">Cozinhas</button>
-      </div>
-      <div class="project-grid">
-        <!-- Exemplo de Project Card -->
-        <div class="project-card" data-category="residenciais">
-          <img src="img/imagem1.png" alt="Reforma Residencial" class="project-img" loading="lazy">
-          <div class="project-overlay">
-            <h3>Reforma Residencial</h3>
-            <p>Renovação completa de ambientes internos</p>
-            <a href="#" class="btn-project">Ver Detalhes</a>
-          </div>
+<!-- ========================= PROJETOS ========================= -->
+<section class="projects" id="projects">
+  <div class="container">
+    <h2 class="section-title">Projetos Realizados</h2>
+    <p class="section-subtitle">Conheça alguns de nossos trabalhos</p>
+
+    <!-- Botões de Filtro -->
+    <div class="project-filter">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="residenciais">Residenciais</button>
+      <button class="filter-btn" data-filter="comerciais">Comerciais</button>
+      <button class="filter-btn" data-filter="banheiros">Banheiros</button>
+      <button class="filter-btn" data-filter="cozinhas">Cozinhas</button>
+    </div>
+
+    <!-- Grade de Projetos -->
+    <div class="project-grid">
+      <!-- ========================= RESIDENCIAIS ========================= -->
+      <div class="project-card" data-category="residenciais">
+        <img src="img/salaemreforma.png" alt="Sala em Reforma" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Sala em Reforma</h3>
+          <p>Renovação completa do ambiente interno</p>
+          <a href="projeto-posts/sala-em-reforma.html" class="btn-project">Ver Detalhes</a>
         </div>
-        <!-- Outros Project Cards... -->
       </div>
-      <div class="projects-more">
-        <a href="#contact" class="btn">Solicite seu Projeto</a>
+
+      <div class="project-card" data-category="residenciais">
+        <img src="img/paredesendopintada.png" alt="Pintura Residencial" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Pintura Residencial</h3>
+          <p>Paredes recebendo novos acabamentos</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- ========================= COMERCIAIS ========================= -->
+      <div class="project-card" data-category="comerciais">
+        <img src="img/escritorioemreforma.png" alt="Escritório em Reforma" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Escritório em Reforma</h3>
+          <p>Melhorias em ambientes corporativos</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="comerciais">
+        <img src="img/ambientecomercialemreforma.png" alt="Ambiente Comercial em Reforma" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Ambiente Comercial</h3>
+          <p>Transformação de espaços de vendas</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- ========================= BANHEIROS ========================= -->
+      <div class="project-card" data-category="banheiros">
+        <img src="img/banheiromoderno.png" alt="Banheiro Moderno" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Banheiro Moderno</h3>
+          <p>Design arrojado e funcional</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="banheiros">
+        <img src="img/banheirominimalista.png" alt="Banheiro Minimalista" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Banheiro Minimalista</h3>
+          <p>Estilo clean e elegante</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <!-- ========================= COZINHAS ========================= -->
+      <div class="project-card" data-category="cozinhas">
+        <img src="img/cozinhaplanejada.png" alt="Cozinha Planejada" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Cozinha Planejada</h3>
+          <p>Espaço otimizado e moderno</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="cozinhas">
+        <img src="img/cozinhabranca.png" alt="Cozinha Branca" class="project-img" loading="lazy">
+        <div class="project-overlay">
+          <h3>Cozinha Branca</h3>
+          <p>Iluminação e amplitude</p>
+          <a href="#" class="btn-project">Ver Detalhes</a>
+        </div>
       </div>
     </div>
-  </section>
+
+    <div class="projects-more">
+      <a href="#contact" class="btn">Solicite seu Projeto</a>
+    </div>
+  </div>
+</section>
 
   <!-- ========================= DEPOIMENTOS ========================= -->
   <section class="testimonials" id="testimonials">
@@ -389,92 +459,177 @@
     </div>
   </section>  
 
-  <!-- ========================= CONTATO ========================= -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2 class="section-title">Entre em Contato</h2>
-      <p class="section-subtitle">Estamos prontos para transformar seu espaço</p>
-      <div class="contact-grid">
-        <div class="contact-form-container">
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <label for="name">Nome</label>
-              <input type="text" id="name" placeholder="Seu nome completo" required>
-              <span class="form-error" id="nameError"></span>
+<!-- ========================= CONTATO ========================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Entre em Contato</h2>
+    <p class="section-subtitle">Estamos prontos para transformar seu espaço</p>
+    
+    <div class="contact-grid">
+      <!-- Formulário que envia dados para enviar.php via POST -->
+      <div class="contact-form-container">
+        <form 
+          class="contact-form" 
+          id="contactForm" 
+          action="enviar.php" 
+          method="POST"
+        >
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <!-- Adicione name="name" para enviar.php poder ler esse campo -->
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Seu nome completo" 
+              required
+            >
+            <span class="form-error" id="nameError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <!-- Adicione name="email" -->
+            <input 
+              type="email" 
+              id="email" 
+              name="email"
+              placeholder="Seu e-mail" 
+              required
+            >
+            <span class="form-error" id="emailError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Telefone</label>
+            <!-- Adicione name="phone" -->
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone"
+              placeholder="Seu telefone com DDD" 
+              required
+            >
+            <span class="form-error" id="phoneError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="service">Serviço Desejado</label>
+            <!-- Adicione name="service" -->
+            <select id="service" name="service" required>
+              <option value="">Selecione o serviço</option>
+              <option value="reform">Reformas Internas</option>
+              <option value="kitchen">Telhados e Coberturas</option>
+              <option value="bathroom">Instalações Hidráulicas</option>
+              <option value="roof">Pinturas e Acabamentos</option>
+              <option value="plumbing">Encanamento e Desentupimentos</option>
+              <option value="other">Outro</option>
+            </select>
+            <span class="form-error" id="serviceError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <!-- Adicione name="message" -->
+            <textarea 
+              id="message" 
+              name="message"
+              placeholder="Descreva seu projeto ou necessidade" 
+              required
+            ></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          
+          <!-- Exibe mensagens de sucesso/erro se quiser -->
+          <div class="form-message" id="formMessage"></div>
+          
+          <!-- Botão de Envio -->
+          <button type="submit" class="btn btn-form">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+      
+      <!-- Informações de Contato -->
+      <div class="contact-info-container">
+        <div class="contact-info">
+          <h3>Informações de Contato</h3>
+          
+          <div class="contact-item">
+            <i class="contact-icon email-icon"></i>
+            <div>
+              <p class="contact-label">E-mail</p>
+              <a 
+                href="mailto:contatojnareformas@gmail.com" 
+                class="contact-detail"
+              >
+                contatojnareformas@gmail.com
+              </a>
             </div>
-            <div class="form-group">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" placeholder="Seu e-mail" required>
-              <span class="form-error" id="emailError"></span>
+          </div>
+          
+          <div class="contact-item">
+            <i class="contact-icon phone-icon"></i>
+            <div>
+              <p class="contact-label">Telefone/WhatsApp</p>
+              <a 
+                href="tel:+5511982602902" 
+                class="contact-detail"
+              >
+                (11) 98260-2902
+              </a>
             </div>
-            <div class="form-group">
-              <label for="phone">Telefone</label>
-              <input type="tel" id="phone" placeholder="Seu telefone com DDD" required>
-              <span class="form-error" id="phoneError"></span>
+          </div>
+          
+          <div class="contact-item">
+            <i class="contact-icon location-icon"></i>
+            <div>
+              <p class="contact-label">Localização</p>
+              <p class="contact-detail">São Paulo - SP</p>
             </div>
-            <div class="form-group">
-              <label for="service">Serviço Desejado</label>
-              <select id="service" required>
-                <option value="">Selecione o serviço</option>
-                <option value="reform">Reforma Completa</option>
-                <option value="kitchen">Cozinha</option>
-                <option value="bathroom">Banheiro</option>
-                <option value="roof">Telhado</option>
-                <option value="plumbing">Encanamento</option>
-                <option value="other">Outro</option>
-              </select>
-              <span class="form-error" id="serviceError"></span>
+          </div>
+          
+          <div class="contact-item">
+            <i class="contact-icon time-icon"></i>
+            <div>
+              <p class="contact-label">Horário de Atendimento</p>
+              <p class="contact-detail">
+                Segunda a Sexta: 8h às 18h<br>
+                Sábado: 8h às 12h
+              </p>
             </div>
-            <div class="form-group">
-              <label for="message">Mensagem</label>
-              <textarea id="message" placeholder="Descreva seu projeto ou necessidade" required></textarea>
-              <span class="form-error" id="messageError"></span>
-            </div>
-            <div class="form-message" id="formMessage"></div>
-            <button type="submit" class="btn btn-form">Enviar Mensagem</button>
-          </form>
-        </div>
-        <div class="contact-info-container">
-          <div class="contact-info">
-            <h3>Informações de Contato</h3>
-            <div class="contact-item">
-              <i class="contact-icon email-icon"></i>
-              <div>
-                <p class="contact-label">E-mail</p>
-                <a href="mailto:contatojnareformas@gmail.com" class="contact-detail">contatojnareformas@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="contact-icon phone-icon"></i>
-              <div>
-                <p class="contact-label">Telefone/WhatsApp</p>
-                <a href="tel:+5511982602902" class="contact-detail">(11) 98260-2902</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="contact-icon location-icon"></i>
-              <div>
-                <p class="contact-label">Localização</p>
-                <p class="contact-detail">São Paulo - SP</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <i class="contact-icon time-icon"></i>
-              <div>
-                <p class="contact-label">Horário de Atendimento</p>
-                <p class="contact-detail">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
-              </div>
-            </div>
-            <div class="contact-social">
-              <a href="#" class="social-icon" title="Facebook"><i class="facebook-icon"></i></a>
-              <a href="#" class="social-icon" title="Instagram"><i class="instagram-icon"></i></a>
-              <a href="https://wa.me/5511982602902" class="social-icon" title="WhatsApp" target="_blank" rel="noopener"><i class="whatsapp-icon-small"></i></a>
-            </div>
+          </div>
+          
+          <div class="contact-social">
+            <a 
+              href="#" 
+              class="social-icon" 
+              title="Facebook"
+            >
+              <i class="facebook-icon"></i>
+            </a>
+            <a 
+              href="#" 
+              class="social-icon" 
+              title="Instagram"
+            >
+              <i class="instagram-icon"></i>
+            </a>
+            <a 
+              href="https://wa.me/5511982602902" 
+              class="social-icon" 
+              title="WhatsApp" 
+              target="_blank" 
+              rel="noopener"
+            >
+              <i class="whatsapp-icon-small"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ========================= FOOTER ========================= -->
   <footer>

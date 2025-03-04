@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initContactForm();
     initVideoLoading();
     animateOnScroll();
+    
   
     // Eventos globais
     window.addEventListener('scroll', handleScrollEvents);
@@ -137,17 +138,29 @@ document.addEventListener('DOMContentLoaded', function () {
   function initProjectFilters() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-    if (filterBtns.length === 0 || projectCards.length === 0) return;
+  
+    if (!filterBtns.length || !projectCards.length) return;
   
     filterBtns.forEach(btn => {
       btn.addEventListener('click', function () {
+        // Remove classe "active" de todos os botões
         filterBtns.forEach(b => b.classList.remove('active'));
+        // Adiciona "active" ao botão clicado
         this.classList.add('active');
+  
+        // Lê o atributo data-filter
         const filter = this.getAttribute('data-filter');
+  
+        // Mostra ou esconde os cards
         projectCards.forEach(card => {
-          card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter)
-            ? 'block'
-            : 'none';
+          const category = card.getAttribute('data-category');
+          // Se o filtro for "all", mostra tudo
+          // Se não, mostra apenas a categoria correspondente
+          if (filter === 'all' || category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
         });
       });
     });
@@ -156,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ---------- Seção de FAQ ---------- */
   function initFAQ() {
     const faqItems = document.querySelectorAll('.faq-item');
-    if (faqItems.length === 0) return;
+    if (!faqItems.length) return;
   
     faqItems.forEach(item => {
       const question = item.querySelector('.faq-question');
@@ -165,11 +178,12 @@ document.addEventListener('DOMContentLoaded', function () {
         item.classList.toggle('active');
         const toggle = this.querySelector('.faq-toggle');
         if (toggle) {
-          toggle.textContent = item.classList.contains('active') ? '-' : '+';
+          // Exibe “▼” quando aberto, “+” quando fechado
+          toggle.textContent = item.classList.contains('active') ? '˅' : '+';
         }
       });
     });
-  }
+  }  
   
   /* ---------- Formulário de Contato ---------- */
   function initContactForm() {
